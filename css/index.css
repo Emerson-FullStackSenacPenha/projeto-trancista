@@ -1,0 +1,56 @@
+:root{
+
+    --cor_principal: rgb(232, 232, 183);    
+    --cor_secundaria: rgb(151, 0, 0);
+    
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header{
+
+    background-color: var(--cor_principal);
+    height: 50px;
+
+    grid-area: cabecalho;
+
+}
+
+main{
+
+    
+
+    display: grid;
+    grid-template-areas: 
+    
+    'cabecalho cabecalho cabecalho'
+    'section section section'
+    'rodape rodape rodape'
+    ;
+
+    
+
+}
+
+section{
+
+    grid-area: section;
+
+    height: 20px;
+
+}
+
+footer{
+
+    grid-area: rodape;
+
+    background-color: var(--cor_secundaria);
+    height: 50px;
+
+}
