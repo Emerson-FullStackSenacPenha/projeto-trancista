@@ -1,0 +1,19 @@
+Main
+Display grid
+gap: 10px
+
+header
+display grid
+grid-t colums (cada fr já gera as colunas)
+
+menu
+display grid
+grid-t colums (cada fr já gera as colunas)
+place-i (alinhar ver e hor)
+
+itens menu (referente a UL)
+com flex
+list-s none
+
+itens menu (referente a LI)
+Paddin e color
