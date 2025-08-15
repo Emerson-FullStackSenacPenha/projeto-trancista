@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root{
 
     --cor_principal: rgb(232, 232, 183);    
@@ -13,44 +15,123 @@
 
 }
 
-header{
+main{
 
-    background-color: var(--cor_principal);
-    height: 50px;
-
-    grid-area: cabecalho;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    height: 100dvh;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
 
 }
 
-main{
+header{
 
-    
+    background-color: var(--cor_principal);
+    height: 60px;
 
-    display: grid;
-    grid-template-areas: 
+    display: flex;
+    flex-direction: row;
     
-    'cabecalho cabecalho cabecalho'
-    'section section section'
-    'rodape rodape rodape'
-    ;
+}
 
+#logo{
+
+    height: 50px;
+    width: 100px;
+    margin: 0px 50px;
     
+}
+
+#img_logo{
+
+    height: 55px;
+
+}
+
+#menu{
+
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    
+}
+
+#menu_ul{
+
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-weight: 600;
+
+}
+
+.pg:hover{
+
+    color: white;
+    cursor: pointer;
+
+}
+
+.pg{
+
+    color: var(--cor_secundaria);
+    margin-top: 5px;
+    
+}
+
+#pg_atual{
+
+    color: white;
+    text-shadow: 0px 0px 3px var(--cor_secundaria);
+    margin-top: 5px;
+    border-top: 3px solid var(--cor_secundaria);
+
+}
+
+
+#menu_login{
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--cor_secundaria);
+
+}
+
+.caixa{
+
+    background-color: aliceblue;
+    height: 20px;
+    width: 80px;
+    border-radius: 5px;
+    
+}
+
+#entrar{
+
+    color: white;
+    background-color: var(--cor_secundaria);
+    height: 20px;
+    width: 50px;
+    text-align: center;
+    border-radius: 5px;
 
 }
 
 section{
 
-    grid-area: section;
-
-    height: 20px;
+    display: flex;
+    flex: 1;
 
 }
 
 footer{
 
-    grid-area: rodape;
-
     background-color: var(--cor_secundaria);
-    height: 50px;
+    height: 60px;
 
 }
