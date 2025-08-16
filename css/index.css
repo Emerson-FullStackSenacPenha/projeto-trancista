@@ -50,7 +50,7 @@ header{
     display: flex;
     flex: 1;
     justify-content: space-around;
-    max-width: 1200px;
+    max-width: 2000px;
 
 }
 
@@ -208,17 +208,17 @@ header{
 
 }
 /* Textos */
+.texto{
+
+    width: 100%;
+    max-width: 1800px;
+
+}
+
 .txt{
 
     margin-left: 10px;
     
-}
-
-.texto{
-
-    width: 100%;
-    max-width: 1000px;
-
 }
 
 /* Rodapé */
