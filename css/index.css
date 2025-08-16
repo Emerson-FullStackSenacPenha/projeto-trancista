@@ -15,32 +15,45 @@
 
 }
 
+body{
+
+    display: flex;
+    height: 100vh;
+    height: 100dvh;
+
+}
+
 main{
 
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    height: 100dvh;
-    min-height: 100vh;
 
-    min-width: 1000px;
-
+    flex: 1;
+    
     font-family: 'Inter', sans-serif;
     font-weight: 500;
 
 }
-
+/* cabeçalho */
 header{
 
     background-color: var(--cor_principal);
     height: 60px;
-    width: 100%;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#cabecalho{
 
     display: flex;
-    flex-direction: row;
-    
+    flex: 1;
+    justify-content: space-around;
+    max-width: 1200px;
+
 }
-/* Começo cabeçalho */
+
 #logo{
 
     height: 50px;
@@ -133,27 +146,86 @@ header{
 
 
 }
-/* Fim cabeçalho */
-
-/* Slider */
-section{
+/* Section */
+#principal{
 
     background-image: url(../images/fundo_section.png);
+    background-size: 50px;
     
-
     display: flex;
     flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+/* Slider */
+#slider{
+
+    background-color: aquamarine;
+    height: 200px;
+    width: 100%;
+
+}
+/* Tendencias */
+#tendencias{
+
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+
+    justify-content: center;
 
 }
 
+.box_tendencias{
 
+    background-color: aquamarine;
+    height: 150px;
+    width: 150px;
 
+    border-radius: 10px;
 
+}
+/* Empresas Parceiras */
+#empresas{
 
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
 
+}
+
+.box_empresas{
+
+    background-color: var(--cor_secundaria);
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+
+}
+/* Textos */
+.txt{
+
+    margin-left: 10px;
+    
+}
+
+.texto{
+
+    width: 100%;
+    max-width: 1000px;
+
+}
+
+/* Rodapé */
 footer{
 
     background-color: var(--cor_secundaria);
     height: 60px;
+    min-height: 60px;
 
 }
