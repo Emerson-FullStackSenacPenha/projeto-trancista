@@ -17,3 +17,8 @@ list-s none
 
 itens menu (referente a LI)
 Paddin e color
+
+
+
+
+slider automático, só passando fotos, sem botões, só pra deixar o site bonito
