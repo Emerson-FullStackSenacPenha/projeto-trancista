@@ -85,17 +85,18 @@ header{
 
 }
 
-.pg:hover{
+.pg, a:hover{
 
     color: white;
     cursor: pointer;
 
 }
 
-.pg{
+.pg, a{
 
     color: var(--cor_secundaria);
     margin-top: 5px;
+    text-decoration: none;
     
 }
 
