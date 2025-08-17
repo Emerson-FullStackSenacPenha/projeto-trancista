@@ -159,24 +159,19 @@ header{
     align-items: center;
     
 }
-/* Slider */
-.slider{
+/* Banner */
 
-    background-color: rgb(100, 150, 232);
-    
+#banner{
+
+    height: 300px;
     width: 100%;
-    height: 200px;
-    
+
+    background-image: url(../images/foto_0.png);
+    background-size: cover;
+    background-position: 0% 10%;
+
 }
 
-.slider img{
-
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 0% 18%;
-    
-}
 /* Tendencias */
 #tendencias{
 
@@ -198,7 +193,87 @@ header{
 
     border-radius: 10px;
 
+    display: flex;
+    justify-content: end;
+    
+    flex-direction: column;
+
+    
+    box-shadow: inset 0px -45px 25px black;
+
 }
+
+.box_tendencias p{
+
+    font-size: 13px;
+    margin-left: 5px;
+    margin-bottom: 3px;
+    color: white;
+
+}
+
+.acessar{
+
+    height: 25px;
+    width: 100%;
+    background-color: var(--cor_secundaria);
+    border-radius: 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+#bx1{
+
+    background-image: url(../images/foto_1.jpg);
+    background-size: 300px;
+    background-position: 50% 5%;
+
+}
+
+#bx2{
+
+    background-image: url(../images/foto_2.jpg);
+    background-size: 250px;
+    background-position: 50% 45%;
+
+}
+
+#bx3{
+
+    background-image: url(../images/foto_3.jpg);
+    background-size: cover;
+    background-position: 50% 100%;
+
+}
+
+#bx4{
+
+    background-image: url(../images/foto_4.jpg);
+    background-size: cover;
+    background-position: 50% 0%;
+
+}
+
+#bx5{
+
+    background-image: url(../images/foto_5.jpg);
+    background-size: 190px;
+    background-position: 50% 43%;
+
+}
+
+#bx6{
+
+    background-image: url(../images/foto_6.jpg);
+    background-size: 380px;
+    background-position: 45% 3%;
+
+}
+
 /* Empresas Parceiras */
 #empresas{
 
