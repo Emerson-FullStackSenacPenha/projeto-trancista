@@ -110,8 +110,6 @@ main{
     
 }
 
-
-
 #pg_atual{
 
     color: white;
@@ -173,14 +171,20 @@ main{
     
 }
 /* Banner */
-#banner{
 
-    height: 300px;
+.img_banner{
+
+    height: 350px;
     width: 100%;
+    
+    object-fit: cover;
+    object-position: 50% 10%;
+    
+}
 
-    background-image: url(../images/foto_0.png);
-    background-size: cover;
-    background-position: 0% 10%;
+.carousel{
+
+    width: 100%;
 
 }
 /* Tendencias */
@@ -209,7 +213,6 @@ main{
     
     flex-direction: column;
 
-    
     box-shadow: inset 0px -45px 25px black;
 
 }
@@ -229,11 +232,28 @@ main{
     width: 100%;
     background-color: var(--cor_secundaria);
     border-radius: 10px;
-    
+
+    box-shadow: inset 1px 1px 5px white;
+
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+
+    transition: 0.1s;
+    
+}
+
+.acessar:hover{
+
+    background-color: white;
+    color: var(--cor_secundaria);
+    cursor: pointer;
+
+    box-shadow: inset 1px 1px 5px var(--cor_secundaria);
+
+    transition: 0.1s;
+    scale: 1.01;
 
 }
 
@@ -358,6 +378,12 @@ footer{
 
         width: 100%;
         box-shadow: inset 0px -55px 25px black;
+
+    }
+
+    .img_banner{
+
+        height: 200px;
 
     }
 
