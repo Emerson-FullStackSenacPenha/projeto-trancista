@@ -182,15 +182,40 @@ main{
     
 }
 
-.carousel{
+#carouselExampleSlidesOnly{
+
+    width: 100%;
+    
+}
+
+
+
+/* Tendencias */
+
+#carouselArtigos{
 
     width: 100%;
 
-}
-/* Tendencias */
-#tendencias{
+    background-color: aqua;
 
     display: flex;
+    justify-content: space-around;
+
+}
+
+
+#carousel_all{
+
+    width: 200px;
+
+
+    background-color: blueviolet;
+
+}
+
+#tendencias{
+
+    display: none;
     flex-direction: row;
     
     width: 100%;
@@ -202,7 +227,6 @@ main{
 
 .box_tendencias{
 
-    background-color: aquamarine;
     height: 160px;
     width: 160px;
 
@@ -230,10 +254,8 @@ main{
 
     height: 25px;
     width: 100%;
-    background-color: var(--cor_secundaria);
+    background-image: linear-gradient(rgb(255, 255, 255), var(--cor_secundaria), var(--cor_secundaria));
     border-radius: 10px;
-
-    box-shadow: inset 1px 1px 5px white;
 
     display: flex;
     justify-content: center;
@@ -246,11 +268,10 @@ main{
 
 .acessar:hover{
 
-    background-color: white;
+    background-image: linear-gradient(white);
+
     color: var(--cor_secundaria);
     cursor: pointer;
-
-    box-shadow: inset 1px 1px 5px var(--cor_secundaria);
 
     transition: 0.1s;
     scale: 1.01;
