@@ -188,30 +188,43 @@ main{
     
 }
 
+/* Carrocel de artigos */
 
-
-/* Tendencias */
-
-#carouselArtigos{
+#carouselCards{
 
     width: 100%;
+    
+}
 
-    background-color: aqua;
+.carousel-item{
 
-    display: flex;
+    transition: 1s;
+    
+}
+
+/* Botões */
+.carousel-control-prev, .carousel-control-next{
+
+    width: 60px;
+    
+}
+
+.iconi{
+
+    color:rgb(0, 0, 0);
+    font-size: 50px;
+    
+}
+
+/* seções tendencias */
+.d-flex{
+
+    gap: 20px;
     justify-content: space-around;
-
+    
 }
 
-
-#carousel_all{
-
-    width: 200px;
-
-
-    background-color: blueviolet;
-
-}
+/* Tendencias */
 
 #tendencias{
 
