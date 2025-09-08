@@ -3,6 +3,7 @@
 const campoUsuario = document.querySelector("#usuario");
 const campoSenha = document.querySelector("#senha");
 const botaoMostrar = document.querySelector("#mostrar");
+const botaoEntrar = document.querySelector("#entrar");
 
 botaoMostrar.addEventListener("pointerdown", function(){
     campoSenha.type = "text";
@@ -22,12 +23,12 @@ botaoMostrar.addEventListener("pointerout", function(){
     botaoMostrar.style.color = "white";
 });
 
-function validarLogin(){
+botaoEntrar.addEventListener("click", function validarLogin(){
 
     const campoUsuario = document.querySelector("#usuario");
     const campoSenha = document.querySelector("#senha");
 
-    if ( usuario === "emerson" && senha === "1234" ) {
+    if ( campoUsuario.value === "emerson" && campoSenha.value === "1234" ) {
 
         window.location.href = "galeria.html"
 
@@ -35,6 +36,6 @@ function validarLogin(){
 
         alert("Usuário ou senha incorreta!")
 
-    }
+    };
 
-}
+});
