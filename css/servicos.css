@@ -34,13 +34,24 @@ main{
     font-weight: 500;
 
 }
+
 /* cabeçalho */
-header{
+#cabecalho_desktop{
 
     background-color: var(--cor_principal);
     height: 60px;
     min-height: 60px;
     display: flex;
+    justify-content: center;
+
+}
+
+#cabecalho_mobile{
+
+    background-color: var(--cor_principal);
+    height: 60px;
+    min-height: 60px;
+    display: none;
     justify-content: center;
 
 }
@@ -100,7 +111,7 @@ header{
     
 }
 
-.pg_atual{
+#pg_atual{
 
     color: white;
     text-shadow: 0px 0px 3px var(--cor_secundaria);
@@ -109,6 +120,7 @@ header{
 
 }
 
+/* Login */
 #menu_login{
 
     display: flex;
@@ -122,31 +134,59 @@ header{
 .caixa{
 
     background-color: aliceblue;
-    height: 20px;
-    width: 80px;
     border-radius: 5px;
+    border: 0;
+
+    height: 15px;
+    width: 50px;
+    
+    font-size: 10px;
     
 }
 
-#entrar{
+#usuario{
+
+    width: 80px;
+
+}
+
+#senha{
+
+    width: 35px;
+    text-align: center;
+
+}
+
+#mostrar{
+
+    background-color: var(--cor_principal);
+    color: var(--cor_secundaria);
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+
+}
+
+.butao{
 
     color: white;
     background-color: var(--cor_secundaria);
-    height: 20px;
+    height: 15px;
     width: 50px;
     text-align: center;
+    font-size: 10px;
     border-radius: 5px;
 
 }
 
-#entrar:hover{
+.butao:hover{
 
     background-color: white;
     color: var(--cor_secundaria);
     cursor: pointer;
 
-
 }
+
 /* Section */
 #principal{
 
