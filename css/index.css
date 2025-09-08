@@ -195,7 +195,7 @@ main{
 
 #carouselExampleSlidesOnly{
 
-    display: none;
+    display: flex;
     width: 100%;
     
 }
