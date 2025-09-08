@@ -7,17 +7,17 @@ const botaoEntrar = document.querySelector("#entrar");
 
 botaoMostrar.addEventListener("pointerdown", function(){
     campoSenha.type = "text";
-    botaoMostrar.style.color = "black";
+    botaoMostrar.style.color = "white";
 });
 
 botaoMostrar.addEventListener("pointerup", function(){
     campoSenha.type = "password";
-    botaoMostrar.style.color = "white";
+    botaoMostrar.style.color = "var(--cor_secundaria)";
 });
 
 botaoMostrar.addEventListener("pointerout", function(){
     campoSenha.type = "password";
-    botaoMostrar.style.color = "white";
+    botaoMostrar.style.color = "var(--cor_secundaria)";
 });
 
 botaoEntrar.addEventListener("click", function validarLogin(){
