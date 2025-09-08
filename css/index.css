@@ -134,7 +134,7 @@ main{
 
     background-color: aliceblue;
     height: 20px;
-    width: 100px;
+    width: 70px;
     border-radius: 5px;
     border: 0;
     
@@ -143,10 +143,17 @@ main{
 #mostrar{
 
     color: white;
-    background-color: var(--cor_secundaria);
+    
 
-    text-align: center;
+    border: 0;
     border-radius: 5px;
+
+    
+    
+    
+    
+    
+    
 
 }
 

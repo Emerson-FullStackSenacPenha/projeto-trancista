@@ -30,11 +30,15 @@ botaoEntrar.addEventListener("click", function validarLogin(){
 
     if ( campoUsuario.value === "emerson" && campoSenha.value === "1234" ) {
 
-        window.location.href = "galeria.html"
+        window.location.href = "galeria.html";
 
+    } else if ( campoUsuario.value === "" && campoSenha.value === "" ) {
+
+        return;
+        
     } else {
 
-        alert("Usuário ou senha incorreta!")
+        alert("Usuário ou senha incorreta!");
 
     };
 
