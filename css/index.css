@@ -119,6 +119,7 @@ main{
 
 }
 
+/* Login */
 #menu_login{
 
     display: flex;
@@ -133,28 +134,40 @@ main{
 
     background-color: aliceblue;
     height: 20px;
-    width: 80px;
+    width: 100px;
     border-radius: 5px;
+    border: 0;
     
 }
 
-#entrar{
+#mostrar{
 
     color: white;
     background-color: var(--cor_secundaria);
-    height: 20px;
-    width: 50px;
+
     text-align: center;
     border-radius: 5px;
 
 }
 
-#entrar:hover{
+.butao{
+
+    color: white;
+    background-color: var(--cor_secundaria);
+    height: 20px;
+    width: 70px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+
+
+.butao:hover{
 
     background-color: white;
     color: var(--cor_secundaria);
     cursor: pointer;
-
 
 }
 /* Section */
@@ -184,6 +197,7 @@ main{
 
 #carouselExampleSlidesOnly{
 
+    display: none;
     width: 100%;
     
 }
