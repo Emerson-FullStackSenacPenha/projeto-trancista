@@ -301,7 +301,7 @@ main{
 
 #bx2{
 
-    background-image: url(../images/foto_2.jpg);
+    background-image: url(../images/foto_0.png);
     background-size: 250px;
     background-position: 50% 45%;
 
@@ -317,17 +317,17 @@ main{
 
 #bx4{
 
-    background-image: url(../images/foto_4.jpg);
-    background-size: cover;
-    background-position: 50% 0%;
+    background-image: url(../images/foto_5.jpg);
+    background-size: 190px;
+    background-position: 50% 43%;
 
 }
 
 #bx5{
 
-    background-image: url(../images/foto_5.jpg);
-    background-size: 190px;
-    background-position: 50% 43%;
+    background-image: url(../images/foto_4.jpg);
+    background-size: cover;
+    background-position: 50% 0%;
 
 }
 
@@ -338,6 +338,24 @@ main{
     background-position: 45% 3%;
 
 }
+
+#bx7{
+
+    background-image: url(../images/foto_2.jpg);
+    background-size: 380px;
+    background-position: 45% 42%;
+
+}
+
+#bx8{
+
+    background-image: url(../images/foto_8.jpg);
+    background-size: 550px;
+    background-position: 70% 44%;
+
+}
+
+
 /* Empresas Parceiras */
 #empresas{
 
