@@ -32,7 +32,7 @@ botaoEntrar.addEventListener("click", function validarLogin(){
     } else if ( campoUsuario.value === "" && campoSenha.value === "" ) {
 
         return;
-        
+
     } else {
 
         alert("Usuário ou senha incorreta!");
