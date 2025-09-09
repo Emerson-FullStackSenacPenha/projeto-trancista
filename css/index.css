@@ -184,6 +184,64 @@ main{
     cursor: pointer;
 
 }
+
+/* Dialogo de Login */
+
+dialog{
+
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: var(--cor_principal);
+    border-color: var(--cor_secundaria);
+    border-radius: 20px;
+    
+    height: 300px;
+    width: 400px;
+
+}
+
+dialog::backdrop{
+
+    backdrop-filter: blur(2px) ; 
+
+}
+
+.infoDialog{
+
+    text-align: center;
+    color: var(--cor_secundaria);
+    font-weight: 700;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 20px;
+    padding: 10px;
+
+}
+
+dialog button{
+
+    background-color: var(--cor_secundaria);
+    width: 200px;
+    border-color: var(--cor_secundaria);
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+
+}
+
+dialog button:hover{
+
+    color: var(--cor_secundaria);
+    background-color: white;
+    border-color: var(--cor_secundaria);
+
+}
+
 /* Section */
 #principal{
 
@@ -253,7 +311,6 @@ main{
 }
 
 /* Tendencias */
-
 #tendencias{
 
     display: none;
@@ -383,7 +440,6 @@ main{
 
 }
 
-
 /* Empresas Parceiras */
 #empresas{
 
@@ -404,6 +460,7 @@ main{
     border-radius: 50px;
 
 }
+
 /* Textos */
 .texto{
 
@@ -416,6 +473,7 @@ main{
 
     margin: 10px 0px 10px 10px;
 }
+
 /* Rodapé */
 footer{
 
