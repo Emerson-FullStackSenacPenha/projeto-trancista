@@ -4,6 +4,9 @@ const campoUsuario = document.querySelector("#usuario");
 const campoSenha = document.querySelector("#senha");
 const botaoMostrar = document.querySelector("#mostrar");
 const botaoEntrar = document.querySelector("#entrar");
+const botaoCadastrar = document.querySelector("#cadastrar");
+const janelaSc = document.querySelector("#senhaCadastrar");
+const fecharSc = janelaSc.querySelector("#sc");
 const janelaSe = document.querySelector("#senhaErrada");
 const fecharSe = janelaSe.querySelector("#se");
 
@@ -48,4 +51,12 @@ fecharSe.addEventListener("click", function(){
 
     janelaSe.close();
 
+});
+
+botaoCadastrar.addEventListener("click", function(){
+    janelaSc.showModal();
+});
+
+fecharSc.addEventListener("click", function(){
+    janelaSc.close();
 });
