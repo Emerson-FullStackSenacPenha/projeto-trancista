@@ -4,6 +4,8 @@ const campoUsuario = document.querySelector("#usuario");
 const campoSenha = document.querySelector("#senha");
 const botaoMostrar = document.querySelector("#mostrar");
 const botaoEntrar = document.querySelector("#entrar");
+const janelaSe = document.querySelector("#senhaErrada");
+const fecharSe = janelaSe.querySelector("#se");
 
 botaoMostrar.addEventListener("pointerdown", function(){
     campoSenha.type = "text";
@@ -24,6 +26,7 @@ botaoEntrar.addEventListener("click", function validarLogin(){
 
     const campoUsuario = document.querySelector("#usuario");
     const campoSenha = document.querySelector("#senha");
+    
 
     if ( campoUsuario.value === "emerson" && campoSenha.value === "1234" ) {
 
@@ -35,8 +38,14 @@ botaoEntrar.addEventListener("click", function validarLogin(){
 
     } else {
 
-        alert("Usuário ou senha incorreta!");
+        janelaSe.showModal();
 
     };
+
+});
+
+fecharSe.addEventListener("click", function(){
+
+    janelaSe.close();
 
 });
