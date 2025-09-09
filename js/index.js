@@ -1,11 +1,19 @@
 'use strict'
 
+let usuarioCadastrado = null;
+let senhaCadastrada = null;
+
 const campoUsuario = document.querySelector("#usuario");
 const campoSenha = document.querySelector("#senha");
+
+const campoCriarUsuario = document.querySelector("#criarUsuario");
+const campoCriarSenha = document.querySelector("#criarSenha");
+
 const botaoMostrar = document.querySelector("#mostrar");
 const botaoEntrar = document.querySelector("#entrar");
 const botaoCadastrar = document.querySelector("#cadastrar");
 const janelaSc = document.querySelector("#senhaCadastrar");
+const botaoCadastrarlogin = janelaSc.querySelector("#cl");
 const fecharSc = janelaSc.querySelector("#sc");
 const janelaSe = document.querySelector("#senhaErrada");
 const fecharSe = janelaSe.querySelector("#se");
@@ -25,13 +33,34 @@ botaoMostrar.addEventListener("pointerout", function(){
     botaoMostrar.style.color = "var(--cor_secundaria)";
 });
 
+botaoCadastrarlogin.addEventListener("click", function(){
+
+    usuarioCadastrado = campoCriarUsuario.value
+    senhaCadastrada = campoCriarSenha.value
+
+    if ( usuarioCadastrado && senhaCadastrada ) {
+
+        alert("Cadastro Realizado com Sucesso!")
+        janelaSc.close();
+
+    } else {
+
+        alert("Preencha usuário e senha!")
+        usuarioCadastrado = null;
+        senhaCadastrada = null;
+
+    }
+
+});
+
+
 botaoEntrar.addEventListener("click", function validarLogin(){
 
     const campoUsuario = document.querySelector("#usuario");
     const campoSenha = document.querySelector("#senha");
     
 
-    if ( campoUsuario.value === "emerson" && campoSenha.value === "1234" ) {
+    if ( campoUsuario.value === usuarioCadastrado && campoSenha.value === senhaCadastrada ) {
 
         window.location.href = "galeria.html";
 
