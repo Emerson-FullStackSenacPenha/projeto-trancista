@@ -2,13 +2,10 @@
 
 let usuarioCadastrado = null;
 let senhaCadastrada = null;
-
 const campoUsuario = document.querySelector("#usuario");
 const campoSenha = document.querySelector("#senha");
-
 const campoCriarUsuario = document.querySelector("#criarUsuario");
 const campoCriarSenha = document.querySelector("#criarSenha");
-
 const botaoMostrar = document.querySelector("#mostrar");
 const botaoEntrar = document.querySelector("#entrar");
 const botaoCadastrar = document.querySelector("#cadastrar");
@@ -52,7 +49,6 @@ botaoCadastrarlogin.addEventListener("click", function(){
     }
 
 });
-
 
 botaoEntrar.addEventListener("click", function validarLogin(){
 
