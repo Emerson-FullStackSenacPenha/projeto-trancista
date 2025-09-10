@@ -18,6 +18,7 @@ const botaoRecuperar = document.querySelector("#esqueciSenha");
 const janelaSr = document.querySelector("#senhaRecuperar");
 const botaoIrCadastrar = document.querySelector("#irCadastro");
 const fecharSr = document.querySelector("#sairRs");
+const botaoVerSenha = document.querySelector("#mostrarSenha");
 
 botaoMostrar.addEventListener("pointerdown", function(){
     campoSenha.type = "text";
@@ -93,6 +94,12 @@ botaoIrCadastrar.addEventListener("click", function(){
 
     janelaSr.close();
     janelaSc.showModal();
+
+});
+
+botaoVerSenha.addEventListener("pointerdown", function(){
+
+    
 
 });
 
