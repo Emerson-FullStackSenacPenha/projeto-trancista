@@ -115,12 +115,18 @@ botaoVerSenha.addEventListener("pointerdown", function(){
 
 fecharSr.addEventListener("click", function(){
     janelaSr.close();
+    consulSenha.value = "";
 });
 
 botaoCadastrar.addEventListener("click", function(){
+    
+    campoCriarUsuario.value = "";
+    campoCriarSenha.value = "";
     janelaSc.showModal();
 });
 
 fecharSc.addEventListener("click", function(){
     janelaSc.close();
+
+
 });
