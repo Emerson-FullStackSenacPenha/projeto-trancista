@@ -88,6 +88,7 @@ fecharSe.addEventListener("click", function(){
 botaoRecuperar.addEventListener("click", function(){
 
     janelaSe.close();
+    consulSenha.value = "";
     janelaSr.showModal();
 
 });
@@ -116,6 +117,7 @@ botaoVerSenha.addEventListener("pointerdown", function(){
 fecharSr.addEventListener("click", function(){
     janelaSr.close();
     consulSenha.value = "";
+    mostrarSenha.value ="";
 });
 
 botaoCadastrar.addEventListener("click", function(){
