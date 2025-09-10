@@ -256,22 +256,50 @@ dialog button:hover{
     
 }
 /* Banner */
-
-.img_banner{
-
-    height: 350px;
-    width: 100%;
-    
-    object-fit: cover;
-    object-position: 50% 10%;
-    
-}
-
 #carouselExampleSlidesOnly{
 
     display: flex;
     width: 100%;
-    height: 45vh;
+    height: 50vh;
+
+}
+
+.img_banner{
+
+    width: 100%;
+    height: 50vh;
+    
+}
+
+#banner1{
+
+    background-image: url(../images/banner_1.png);
+    background-size: cover;
+    
+
+}
+
+#banner2{
+
+    background-image: url(../images/banner_2.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#banner3{
+
+    background-image: url(../images/banner_3.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#banner4{
+
+    background-image: url(../images/banner_4.png);
+    background-size: cover;
+    background-position: 50% 20%;
 
 }
 
