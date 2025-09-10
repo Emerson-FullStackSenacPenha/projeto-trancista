@@ -19,6 +19,8 @@ const janelaSr = document.querySelector("#senhaRecuperar");
 const botaoIrCadastrar = document.querySelector("#irCadastro");
 const fecharSr = document.querySelector("#sairRs");
 const botaoVerSenha = document.querySelector("#mostrarSenha");
+const mostrarSenha = document.querySelector("#verSenha");
+const consulSenha = document.querySelector("#consultarSenha");
 
 botaoMostrar.addEventListener("pointerdown", function(){
     campoSenha.type = "text";
@@ -99,7 +101,15 @@ botaoIrCadastrar.addEventListener("click", function(){
 
 botaoVerSenha.addEventListener("pointerdown", function(){
 
-    
+    if ( consulSenha.value == usuarioCadastrado ) {
+
+        mostrarSenha.textContent = senhaCadastrada;
+
+    } else {
+
+        alert ("Usuario não encontrado, cadastre um novo login!");
+
+    }
 
 });
 

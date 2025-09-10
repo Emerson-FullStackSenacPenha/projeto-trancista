@@ -269,7 +269,7 @@ dialog button:hover{
 
 #carouselExampleSlidesOnly{
 
-    display: flex;
+    display: none;
     width: 100%;
     
 }
