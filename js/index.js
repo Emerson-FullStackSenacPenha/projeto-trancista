@@ -14,6 +14,10 @@ const botaoCadastrarlogin = janelaSc.querySelector("#cl");
 const fecharSc = janelaSc.querySelector("#sc");
 const janelaSe = document.querySelector("#senhaErrada");
 const fecharSe = janelaSe.querySelector("#se");
+const botaoRecuperar = document.querySelector("#esqueciSenha");
+const janelaSr = document.querySelector("#senhaRecuperar");
+const botaoIrCadastrar = document.querySelector("#irCadastro");
+const fecharSr = document.querySelector("#sairRs");
 
 botaoMostrar.addEventListener("pointerdown", function(){
     campoSenha.type = "text";
@@ -76,6 +80,24 @@ fecharSe.addEventListener("click", function(){
 
     janelaSe.close();
 
+});
+
+botaoRecuperar.addEventListener("click", function(){
+
+    janelaSe.close();
+    janelaSr.showModal();
+
+});
+
+botaoIrCadastrar.addEventListener("click", function(){
+
+    janelaSr.close();
+    janelaSc.showModal();
+
+});
+
+fecharSr.addEventListener("click", function(){
+    janelaSr.close();
 });
 
 botaoCadastrar.addEventListener("click", function(){
