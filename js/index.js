@@ -90,6 +90,7 @@ botaoRecuperar.addEventListener("click", function(){
     janelaSe.close();
     consulSenha.value = "";
     janelaSr.showModal();
+    mostrarSenha.textContent = "";
 
 });
 
@@ -101,6 +102,8 @@ botaoIrCadastrar.addEventListener("click", function(){
 });
 
 botaoVerSenha.addEventListener("pointerdown", function(){
+
+    mostrarSenha.value = "";
 
     if ( consulSenha.value == usuarioCadastrado ) {
 
