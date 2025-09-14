@@ -42,10 +42,22 @@ botaoCadastrarlogin.addEventListener("click", function(){
     const regexSenha = /^\d{4}$/;
     const regexUsuario = /^[a-z]+$/;
 
+    /* 
+    regex = Uma regra ou padrão que a string precisa obedecer
+    /.../ = espaço da regra que vai ser criado pra strig
+    ^ = âncora de inicio, a "regra" começa a partir do 1º caractere digitado
+    \d = só aceita número
+    {4} = e precisa ter exatamente 4 números
+    $ = a regra termina no último caractere
+    [a-z] = aceita apenas letras de a até z em minusculo
+    + = 1 ou mais caracteres, sem limite minimo ou maximo
+    */
+
     usuarioCadastrado = campoCriarUsuario.value
     senhaCadastrada = campoCriarSenha.value
 
     if ( regexUsuario.test(usuarioCadastrado) && regexSenha.test(senhaCadastrada )) {
+        // .test = um dos métodos do regex, ele apenas verifica se é falso ou verdadeiro
 
         alert("Cadastro Realizado com Sucesso!")
         janelaSc.close();
