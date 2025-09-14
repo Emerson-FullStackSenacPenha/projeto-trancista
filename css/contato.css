@@ -100,8 +100,6 @@ header{
     
 }
 
-
-
 .pg_atual{
 
     color: white;
@@ -111,6 +109,7 @@ header{
 
 }
 
+/* Login */
 #menu_login{
 
     display: flex;
@@ -124,31 +123,115 @@ header{
 .caixa{
 
     background-color: aliceblue;
-    height: 20px;
-    width: 80px;
     border-radius: 5px;
+    border: 0;
+
+    height: 15px;
+    width: 50px;
+    
+    font-size: 10px;
     
 }
 
-#entrar{
+#usuario{
+
+    width: 80px;
+
+}
+
+#senha{
+
+    width: 35px;
+    
+}
+
+#mostrar{
+
+    background-color: var(--cor_principal);
+    color: var(--cor_secundaria);
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+
+}
+
+.butao{
 
     color: white;
     background-color: var(--cor_secundaria);
-    height: 20px;
+    height: 15px;
     width: 50px;
     text-align: center;
+    font-size: 10px;
     border-radius: 5px;
 
 }
 
-#entrar:hover{
+.butao:hover{
 
     background-color: white;
     color: var(--cor_secundaria);
     cursor: pointer;
 
+}
+
+/* Dialogo de Login */
+
+dialog{
+
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: var(--cor_principal);
+    border-color: var(--cor_secundaria);
+    border-radius: 20px;
+    
+    height: 300px;
+    width: 400px;
 
 }
+
+dialog::backdrop{
+
+    backdrop-filter: blur(2px) ; 
+
+}
+
+.infoDialog{
+
+    text-align: center;
+    color: var(--cor_secundaria);
+    font-weight: 700;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 10px;
+    padding: 10px;
+
+}
+
+dialog button{
+
+    background-color: var(--cor_secundaria);
+    width: 200px;
+    border-color: var(--cor_secundaria);
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+
+}
+
+dialog button:hover{
+
+    color: var(--cor_secundaria);
+    background-color: white;
+    border-color: var(--cor_secundaria);
+
+}
+
 /* Section */
 #principal{
 
