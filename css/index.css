@@ -443,6 +443,7 @@ dialog button:hover{
 .box_empresas{
 
     background-color: var(--cor_secundaria);
+    background-size: cover;
     height: 50px;
     width: 50px;
     border-radius: 50px;
