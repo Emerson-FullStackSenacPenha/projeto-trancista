@@ -39,17 +39,29 @@ botaoMostrar.addEventListener("pointerout", function(){
 
 botaoCadastrarlogin.addEventListener("click", function(){
 
+    const regexSenha = /^\d{4}$/;
+    const regexUsuario = /^[a-z]+$/;
+
     usuarioCadastrado = campoCriarUsuario.value
     senhaCadastrada = campoCriarSenha.value
 
-    if ( usuarioCadastrado && senhaCadastrada ) {
+    if ( regexUsuario.test(usuarioCadastrado) && regexSenha.test(senhaCadastrada )) {
 
         alert("Cadastro Realizado com Sucesso!")
         janelaSc.close();
 
-    } else {
+    } else { 
 
-        alert("Preencha usuário e senha!")
+        if (!regexUsuario.test(usuarioCadastrado)) {
+
+            alert("O login deve conter apenas letras minúsculas, sem caracteres especiais!");
+
+        } else if (!regexSenha.test(senhaCadastrada)) {
+
+            alert("A senha deve ter exatamente 4 números!");
+
+        }
+
         usuarioCadastrado = null;
         senhaCadastrada = null;
 
