@@ -269,6 +269,52 @@ dialog button:hover{
     
 }
 
+/* Sessão de Serviços */
+
+#sessao_servicos{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    place-items: center;
+
+    width: 100%;
+    height: 30vh;
+
+    
+
+}
+
+.servicos{
+
+    height: 80px;
+    width: 300px;
+    background-color: var(--cor_principal);
+
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.589);
+    border-radius: 10px;
+
+    display: flex;
+    
+}
+
+.servicos img{
+
+    height: 80px;
+    border-radius: 10px;
+
+}
+
+.servicos p{
+
+    height: 80px;
+    flex: 1;
+    
+    display: flex;
+    align-items: center;
+    
+}
+
 /* Carrocel de artigos */
 
 #carouselCards{
