@@ -164,6 +164,17 @@ main{
 
 }
 
+#menu_logout a{
+
+    border-radius: 5px;
+    padding: 0px 3px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background-color: var(--cor_secundaria);
+
+}
+
 .caixa{
 
     background-color: aliceblue;

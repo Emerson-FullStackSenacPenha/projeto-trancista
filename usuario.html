@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="images/icon.png">
+
+    <title>Peril</title>
+
+</head>
+
+<body>
+
+    <header id="cabecalho_desktop">
+
+            <div id="cabecalho">
+                
+                <div id="logo" >
+
+                </div>
+
+                <nav id="menu">
+
+                    <ul id="menu_ul">
+                        <li class="pg_atual">INICIO</li>
+                        <li class="pg"><a href="servicos.html">SERVIÇOS</a></li>
+                        <li class="pg"><a href="galeria.html">GALERIA</a></li>
+                        <li class="pg"><a href="contato.html">CONTATO</a></li>
+                    </ul>
+
+                    <div id="menu_login">
+
+                            <!-- Login -->
+                            <input type="text" class="caixa" id="usuario" placeholder="Login" required>
+                            
+                            <!-- Senha -->
+                            <input type="password" class="caixa" id="senha" name="senha" placeholder="Senha" required>
+                            
+                            <button id="mostrar">👁</button>
+
+                            <div class="butao" id="entrar">Entrar</div>
+
+                            <div class="butao" id="cadastrar">Cadastrar</div>
+
+                    </div>
+
+                    <div id="menu_logout" >
+                            <div id="saudacao_usuario" style="display: none;" ></div>
+                            <button id="perfil" style="display: none;">Perfil</button>
+                            <button id="logout" style="display: none;">Sair</button>
+                    </div>
+            
+                </nav>
+
+            </div>
+
+    </header>
+
+    <header id="cabecalho_mobile">
+
+            <div id="cabecalho">
+                <div id="logo">
+
+                    <figure>
+                        <img id="img_logo" src="images/Entrelaços 1.png" alt="Logo da entrelaços">
+                    </figure>
+
+                </div>
+
+                <nav id="menu">
+
+                    <ul id="menu_ul">
+                        <li id="pg_atual">INICIO</li>
+                        <li class="pg"><a href="servicos.html">SERVIÇO</a></li>
+                        <li class="pg"><a href="galeria.html">GALERIA</a></li>
+                        <li class="pg"><a href="contato.html">CONTATO</a></li>
+                    </ul>
+
+                    <div id="menu_login">
+                        <p>Login</p>
+                        <div class="caixa"></div>
+                        <p>Senha</p>
+                        <div class="caixa"></div>
+                        <div id="entrar">Entrar</div>
+                    </div>
+
+                </nav>
+            </div>
+
+    </header>
+    
+    <div id="dialog_senha">
+
+        <dialog id="senhaCadastrar">
+        
+            <div class="infoDialog">
+
+                <p>Cadastrar Usuário</p>
+
+                <input type="text" id="criarUsuario" placeholder="Primeiro nome em minúsculo" required>
+
+                <input type="text" id="criarSenha" placeholder="Crie a senha com 4 números"  maxlength="4" required>
+
+                <!-- maxLenght nº máximo de caracteres -->
+
+                <button id="cl">Cadastrar</button>
+                
+                <button id="sc">Sair</button>
+
+            </div>
+
+        </dialog>
+
+        <dialog id="senhaErrada">
+        
+            <div class="infoDialog">
+
+                <p>Usuário ou senha inválidos!</p>
+                <p>Verifique seus dados e tente novamente ou utilize a opção de recuperação de senha</p>
+
+                <button id="se">Tentar Novamente</button>
+                <button id="esqueciSenha">Recuperar Senha</button>
+                
+            </div>
+
+        </dialog>
+
+        <dialog id="senhaRecuperar">
+        
+            <div class="infoDialog">
+
+                <p>Recuperar senha</p>
+
+                <div>
+                    <input type="text" id="consultarSenha" placeholder="Seu primeiro nome" required>
+                </div>
+                
+
+                <p id="verSenha"></p>
+
+                <button id="mostrarSenha">Recuperar</button>
+                <button id="irCadastro">Cadastrar</button>
+                <button id="sairRs">Sair</button>
+
+            </div>
+
+        </dialog>
+
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous">
+    </script>
+
+    <script src="js/verificarLogin.js"></script>
+
+</body>
+</html>

@@ -90,7 +90,7 @@ botaoEntrar.addEventListener("click", function validarLogin(){
     if ( campoUsuario.value === usuarioCadastrado && campoSenha.value === senhaCadastrada ) {
 
         // Login bem sucedido
-        window.location.href = "index.html";
+        window.location.href = "usuario.html";
 
     } else if ( campoUsuario.value === "" && campoSenha.value === "" ) {
 
