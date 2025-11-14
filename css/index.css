@@ -329,22 +329,39 @@ dialog button:hover{
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    transition: 0.1s;
     
-}
-
-.servicos:hover {
-
-    
-
-
-
 }
 
 .servicos img{
 
     height: 80px;
     border-radius: 10px;
+
+}
+
+.servicos p{
+
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+
+.servicos:hover{
+
+    background-color: var(--cor_secundaria);
+    color: white;
+
+}
+
+.servicos img:hover{
+
 
 }
 
