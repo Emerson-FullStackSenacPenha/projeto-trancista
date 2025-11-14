@@ -318,9 +318,15 @@ dialog button:hover{
 
 }
 
-.servicos{
+article {
 
     height: 80px;
+    
+}
+
+.servicos{
+
+    height: 100%;
     width: 300px;
     background-color: var(--cor_principal);
 
@@ -329,13 +335,14 @@ dialog button:hover{
 
     display: flex;
     align-items: center;
-    transition: 0.1s;
     
+    overflow: hidden;  
 }
 
 .servicos img{
 
-    height: 80px;
+    object-fit: cover;
+    height: 100%;
     border-radius: 10px;
 
 }
@@ -358,10 +365,13 @@ dialog button:hover{
     background-color: var(--cor_secundaria);
     color: white;
 
+    transition: 0.1s;
 }
 
-.servicos img:hover{
+.servicos:hover img{
 
+    transition: 0.1s;
+    transform: scale(1.1);
 
 }
 
