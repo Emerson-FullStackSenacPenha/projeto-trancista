@@ -90,7 +90,7 @@ botaoEntrar.addEventListener("click", function validarLogin(){
     if ( campoUsuario.value === usuarioCadastrado && campoSenha.value === senhaCadastrada ) {
 
         // Login bem sucedido
-        window.location.href = "usuario.html";
+        window.location.href = "perfil.html";
 
     } else if ( campoUsuario.value === "" && campoSenha.value === "" ) {
 
@@ -195,7 +195,7 @@ window.addEventListener("load", verificarLoginHeader);
 document.querySelector("#logout").addEventListener("click", function() {
     localStorage.removeItem("usuario");
     localStorage.removeItem("senha");
-    location.reload(); // atualiza página para atualizar cabeçalho
+    window.location.href = "index.html";
 });
 
 // Verificar se está logado pra acessar 'usuario'
