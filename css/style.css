@@ -308,6 +308,12 @@ main{
 
 }
 
+.conteudoDialog{
+
+    display: flex;
+
+}
+
 .infoDialog{
 
     text-align: center;
@@ -327,9 +333,33 @@ main{
 
     display: flex;
     justify-content: end;
+    
 
 }
 
+
+.imgServico {
+    
+    width: 50%;       /* ocupa toda a largura do container */
+    height: 100%;      /* ocupa toda a altura do container */
+    object-fit: cover; /* preenche o espaço mantendo a proporção, cortando o excesso se necessário */
+    display: block; 
+
+}
+
+.textoServico{
+
+    padding: 10px;
+    color: var(--cor_secundaria);
+    text-shadow: 2px 2px white;
+    
+}
+
+.textoServico h2{
+
+    text-align: center;
+
+}
 
 /* Section */
 #principal{
