@@ -21,6 +21,9 @@ body{
     height: 100vh;
     height: 100dvh;
 
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+
 }
 
 main{
@@ -217,7 +220,6 @@ main{
 }
 
 /* Dialogo de Login */
-
 dialog{
 
     top: 35%;
@@ -302,7 +304,6 @@ dialog button:hover{
 }
 
 /* Sessão de Serviços */
-
 #sessao_servicos{
 
     display: grid;
@@ -347,18 +348,7 @@ dialog button:hover{
 
 }
 
-.servicos p{
-
-    
-    
-    
-    
-    
-    
-}
-
 /* Carrocel de artigos */
-
 #carouselCards{
 
     width: 100%;
@@ -588,21 +578,16 @@ dialog button:hover{
 /* Textos */
 .texto{
 
+    margin: 10px 0px 10px 10px;
     width: 100%;
     max-width: 1800px;
     
-}
-
-.txt{
-
-    margin: 10px 0px 10px 10px;
 }
 
 /* Rodapé */
 footer{
 
     background-color: var(--cor_secundaria);
-    
     min-height: 30px;
 
 }
