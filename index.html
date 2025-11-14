@@ -41,22 +41,28 @@
                         <li class="pg"><a href="contato.html">CONTATO</a></li>
                     </ul>
 
-                    <div id="menu_login">
+                        <div id="menu_login">
 
-                        <!-- Login -->
-                        <input type="text" class="caixa" id="usuario" placeholder="Login" required>
-                        
-                        <!-- Senha -->
-                        <input type="password" class="caixa" id="senha" name="senha" placeholder="Senha" required>
-                        
-                        <button id="mostrar">👁</button>
+                            <!-- Login -->
+                            <input type="text" class="caixa" id="usuario" placeholder="Login" required>
+                            
+                            <!-- Senha -->
+                            <input type="password" class="caixa" id="senha" name="senha" placeholder="Senha" required>
+                            
+                            <button id="mostrar">👁</button>
 
-                        <div class="butao" id="entrar">Entrar</div>
+                            <div class="butao" id="entrar">Entrar</div>
 
-                        <div class="butao" id="cadastrar">Cadastrar</div>
+                            <div class="butao" id="cadastrar">Cadastrar</div>
 
-                    </div>
+                        </div>
 
+                        <div id="menu_logout" >
+                            <div id="saudacao_usuario" style="display: none;" ></div>
+                            <button id="perfil" style="display: none;">Perfil</button>
+                            <button id="logout" style="display: none;">Sair</button>
+                        </div>
+            
                 </nav>
 
             </div>
@@ -192,12 +198,14 @@
 
             <section id="sessao_servicos">
 
-                <article class="servicos" >
+                <a href=""><div class="servicos" >
                     
                     <p>Tranças</p>
                     <img src="images/foto_1.png" alt="">
 
-                </article>
+                </div></a>
+
+                
 
                 <article class="servicos" >
                     
@@ -346,7 +354,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
 
     <script src="js/index.js"></script>
 

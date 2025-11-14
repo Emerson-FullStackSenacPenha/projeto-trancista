@@ -130,6 +130,27 @@ main{
 
 }
 
+#menu_logout{
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--cor_secundaria);
+
+}
+
+#menu_logout button{
+
+    border-radius: 5px;
+    padding: 0px 3px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background-color: var(--cor_secundaria);
+
+}
+
 .caixa{
 
     background-color: aliceblue;
@@ -295,7 +316,17 @@ dialog button:hover{
     border-radius: 10px;
 
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     
+}
+
+.servicos:hover {
+
+    
+
+
+
 }
 
 .servicos img{
@@ -307,11 +338,11 @@ dialog button:hover{
 
 .servicos p{
 
-    height: 80px;
-    flex: 1;
     
-    display: flex;
-    align-items: center;
+    
+    
+    
+    
     
 }
 

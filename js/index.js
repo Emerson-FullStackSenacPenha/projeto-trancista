@@ -1,7 +1,10 @@
 'use strict'
 
-let usuarioCadastrado = null;
-let senhaCadastrada = null;
+// Usando localStorage para cadastrar senha e manter no pc, sem servidor
+let usuarioCadastrado = localStorage.getItem("usuario");   // pega login salvo
+let senhaCadastrada = localStorage.getItem("senha");       // pega senha salva
+
+// Seletores
 const campoUsuario = document.querySelector("#usuario");
 const campoSenha = document.querySelector("#senha");
 const campoCriarUsuario = document.querySelector("#criarUsuario");
@@ -22,6 +25,7 @@ const botaoVerSenha = document.querySelector("#mostrarSenha");
 const mostrarSenha = document.querySelector("#verSenha");
 const consulSenha = document.querySelector("#consultarSenha");
 
+// MOSTRAR/OCULTAR SENHA
 botaoMostrar.addEventListener("pointerdown", function(){
     campoSenha.type = "text";
     botaoMostrar.style.color = "white";
@@ -37,125 +41,161 @@ botaoMostrar.addEventListener("pointerout", function(){
     botaoMostrar.style.color = "var(--cor_secundaria)";
 });
 
+// CADASTRAR NOVO LOGIN
 botaoCadastrarlogin.addEventListener("click", function(){
 
-    const regexSenha = /^\d{4}$/;
-    const regexUsuario = /^[a-z]+$/;
+    const regexSenha = /^\d{4}$/;       // senha deve ter 4 números
+    const regexUsuario = /^[a-z]+$/;    // usuário só letras minúsculas
 
-    /* 
-    regex = Uma regra ou padrão que a string precisa obedecer
-    /.../ = espaço da regra que vai ser criado pra strig
-    ^ = âncora de inicio, a "regra" começa a partir do 1º caractere digitado
-    \d = só aceita número
-    {4} = e precisa ter exatamente 4 números
-    $ = a regra termina no último caractere
-    [a-z] = aceita apenas letras de a até z em minusculo
-    + = 1 ou mais caracteres, sem limite minimo ou maximo
-    */
+    // recebendo os valores
+    usuarioCadastrado = campoCriarUsuario.value;
+    senhaCadastrada = campoCriarSenha.value;
 
-    usuarioCadastrado = campoCriarUsuario.value
-    senhaCadastrada = campoCriarSenha.value
-
+    // Validar formato dos campos
     if ( regexUsuario.test(usuarioCadastrado) && regexSenha.test(senhaCadastrada )) {
-        // .test = um dos métodos do regex, ele apenas verifica se é falso ou verdadeiro
 
-        alert("Cadastro Realizado com Sucesso!")
+        // SALVAR NO LOCALSTORAGE → persiste no navegador
+        localStorage.setItem("usuario", usuarioCadastrado);
+        localStorage.setItem("senha", senhaCadastrada);
+
+        alert("Cadastro Realizado com Sucesso!");
         janelaSc.close();
 
     } else { 
 
+        // se usuário inválido
         if (!regexUsuario.test(usuarioCadastrado)) {
-
             alert("O login deve conter apenas letras minúsculas, sem caracteres especiais!");
-
+        
+        // se senha inválida
         } else if (!regexSenha.test(senhaCadastrada)) {
-
             alert("A senha deve ter exatamente 4 números!");
 
         }
 
+        // limpar valores inválidos
+        localStorage.removeItem("usuario");
+        localStorage.removeItem("senha");
+
         usuarioCadastrado = null;
         senhaCadastrada = null;
-
     }
 
 });
 
+// LOGIN
 botaoEntrar.addEventListener("click", function validarLogin(){
 
-    const campoUsuario = document.querySelector("#usuario");
-    const campoSenha = document.querySelector("#senha");
-    
-
+    // Comparar com o que está salvo (variáveis + localStorage)
     if ( campoUsuario.value === usuarioCadastrado && campoSenha.value === senhaCadastrada ) {
 
-        window.location.href = "galeria.html";
+        // Login bem sucedido
+        window.location.href = "index.html";
 
     } else if ( campoUsuario.value === "" && campoSenha.value === "" ) {
 
+        // não faz nada se estiver vazio
         return;
 
     } else {
 
+        // login errado → abre modal
         janelaSe.showModal();
-
-    };
+    }
 
 });
 
+// fechar modal de erro
 fecharSe.addEventListener("click", function(){
-
     janelaSe.close();
-
 });
 
+// =======================================================
+// RECUPERAR SENHA
+// =======================================================
 botaoRecuperar.addEventListener("click", function(){
-
     janelaSe.close();
     consulSenha.value = "";
-    janelaSr.showModal();
     mostrarSenha.textContent = "";
-
+    janelaSr.showModal();
 });
 
+// ir para cadastro se não achar usuário
 botaoIrCadastrar.addEventListener("click", function(){
-
     janelaSr.close();
     janelaSc.showModal();
-
 });
 
+// mostrar senha cadastrada
 botaoVerSenha.addEventListener("pointerdown", function(){
 
     mostrarSenha.value = "";
 
     if ( consulSenha.value == usuarioCadastrado ) {
 
+        // mostra senha salva
         mostrarSenha.textContent = senhaCadastrada;
 
     } else {
 
-        alert ("Usuario não encontrado, cadastre um novo login!");
-
+        alert ("Usuário não encontrado, cadastre um novo login!");
     }
 
 });
 
+// fechar janela recuperar senha
 fecharSr.addEventListener("click", function(){
     janelaSr.close();
     consulSenha.value = "";
     mostrarSenha.value ="";
 });
 
+// ABRIR JANELA DE CADASTRO
 botaoCadastrar.addEventListener("click", function(){
-    
     campoCriarUsuario.value = "";
     campoCriarSenha.value = "";
     janelaSc.showModal();
 });
 
+// fechar janela de cadastro
 fecharSc.addEventListener("click", function(){
     janelaSc.close();
+});
 
+// Verificar se está logado
+function verificarLoginHeader() {
+    const usuario = localStorage.getItem("usuario");
+    const senha = localStorage.getItem("senha");
 
+    const menuLogin = document.querySelector("#menu_login");      // div com botões de login/cadastro
+    const saudacao = document.querySelector("#saudacao_usuario"); // div onde aparece "Olá, usuário"
+    const perfil = document.querySelector("#perfil");      // div com botões de perfil
+    const logoutBtn = document.querySelector("#logout");
+
+    if (usuario && senha) {
+        // Está logado → esconde menu_login e mostra saudação
+        menuLogin.style.display = "none";
+        saudacao.style.display = "block";
+        perfil.style.display = "block";
+        saudacao.textContent = "Olá, " + usuario + "!";
+
+        logoutBtn.style.display = "block";
+
+    } else {
+        // Não logado → mostra menu_login e esconde saudação
+        menuLogin.style.display = "flex";
+        saudacao.style.display = "none";
+
+        logoutBtn.style.display = "none";
+    }
+}
+
+// Executar assim que a página carregar
+window.addEventListener("load", verificarLoginHeader);
+
+// Botão de logout
+document.querySelector("#logout").addEventListener("click", function() {
+    localStorage.removeItem("usuario");
+    localStorage.removeItem("senha");
+    location.reload(); // atualiza página para atualizar cabeçalho
 });
