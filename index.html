@@ -30,7 +30,7 @@
 
                     <ul id="menu_ul">
                         <li class="pg_atual">INICIO</li>
-                        <li class="pg"><a href="">SERVIÇOS</a></li>
+                        <li class="pg"><a href="#sessao_servicos">SERVIÇOS</a></li>
                         <li class="pg"><a href="">GALERIA</a></li>
                         <li class="pg"><a href="">CONTATO</a></li>
                     </ul>
@@ -188,89 +188,6 @@
 
             </div>
 
-            <!-- Serviços -->
-            <p class="texto">Serviços</p>
-            <section id="sessao_servicos">
-
-                <article id="btTranca" >
-                    
-                    <div class="servicos" href="">
-                    <p>Tranças</p>
-                    <img src="images/servico/Rectangle1.png" alt="">
-                    </div>
-
-                    <dialog class="dServico" id="trancas">
-
-
-                        <div id="btFtranca" class="butao" >X</div>
-                    </dialog>
-
-                </article>
-
-                <article id="btLace">
-                    
-                    <div class="servicos" href="">
-                    <p>Lace</p>
-                    <img src="images/servico/Rectangle2.png" alt="">
-                    </div>
-
-                    <dialog class="dServico" id="lace">
-
-                        <div id="btLace" class="butao" >X</div>
-                    </dialog>
-
-                </article>
-
-                <article id="btAplique">
-                    
-                    <div class="servicos" href="">
-                    <p>Aplique</p>
-                    <img src="images/servico/Rectangle3.png" alt="">
-                    </div>
-
-                    <dialog class="dServico" id="aplique">
-                    </dialog>
-
-                </article>
-
-                <article id="btManutencao">
-                    
-                    <div class="servicos" href="">
-                    <p>Manutenção</p>
-                    <img src="images/servico/Rectangle4.png" alt="">
-                    </div>
-
-                    <dialog class="dServico" id="manutencao">
-                    </dialog>
-
-                </article>
-
-                <article id="btHidro">
-                    
-                    <div class="servicos" href="">
-                    <p>Hidronutrição</p>
-                    <img src="images/servico/Rectangle5.png" alt="">
-                    </div>
-
-                    <dialog class="dServico" id="hidro">
-                    </dialog>
-
-                </article>
-
-                <article id="btCuidados">
-                    
-                    <div class="servicos" href="">
-                    <p>Cuidados</p>
-                    <img src="images/servico/Rectangle6.png" alt="">
-                    </div>
-
-                    <dialog class="dServico" id="cuidados">
-                    </dialog>
-
-                </article>
-
-            </section>
-            
             <!-- Carrosel de tendências -->
             <p class="texto">Tendências</p>
             <div id="carouselCards" class="carousel slide" data-bs-ride="false">
@@ -348,6 +265,123 @@
                 </button>
 
             </div>
+
+            <!-- Serviços -->
+            <p class="texto">Serviços</p>
+            <section id="sessao_servicos">
+
+                <!-- Tranças -->
+                <section>
+                    <article id="btTranca" >
+                        
+                        <div class="servicos" href="">
+                        <p>Tranças</p>
+                        <img src="images/servico/Rectangle1.png" alt="">
+                        </div>
+
+                    </article>
+
+                    <dialog class="dServico" id="trancas">
+
+                        <div class="topoServico">
+                            <div id="fecharTranca" class="butao" >X</div>
+                        </div>    
+
+                    </dialog>
+                </section>        
+
+                <!-- Lace -->
+                <section>
+
+                    <article id="btLace">
+                        
+                        <div class="servicos" href="">
+                        <p>Lace</p>
+                        <img src="images/servico/Rectangle2.png" alt="">
+                        </div>
+
+                    </article>
+
+                    <dialog class="dServico" id="lace">
+                        <div class="topoServico">
+                            <div id="fecharLace" class="butao" >X</div>
+                        </div>
+                    </dialog>
+
+                </section>
+
+                <!-- Aplique -->
+                <section>
+
+                    <article id="btAplique">
+
+                        <div class="servicos" href="">
+                            <p>Aplique</p>
+                            <img src="images/servico/Rectangle3.png" alt="">
+                        </div>
+
+                    </article>
+
+                    <dialog class="dServico" id="aplique">
+                        <div class="topoServico">
+                            <div id="fecharAplique" class="butao" >X</div>
+                        </div>
+                    </dialog>
+
+                </section>
+
+                <!-- Manutenção -->
+                <section>
+                    <article id="btManutencao">
+                        <div class="servicos" href="">
+                            <p>Manutenção</p>
+                            <img src="images/servico/Rectangle4.png" alt="">
+                        </div>
+                    </article>
+                
+                    <dialog class="dServico" id="manutencao">
+                        <div class="topoServico">
+                            <div id="fecharManutencao" class="butao">X</div>
+                        </div>
+                    </dialog>
+                </section>
+                
+                <!-- Hidronutrição -->
+                <section>
+                    <article id="btHidro">
+                        <div class="servicos" href="">
+                            <p>Hidronutrição</p>
+                            <img src="images/servico/Rectangle5.png" alt="">
+                        </div>
+                    </article>
+                
+                    <dialog class="dServico" id="hidro">
+                        <div class="topoServico">
+                            <div id="fecharHidro" class="butao">X</div>
+                        </div>
+                    </dialog>
+                </section>
+                
+                <!-- Cuidados -->
+                <section>
+                    <article id="btCuidados">
+                        <div class="servicos" href="">
+                            <p>Cuidados</p>
+                            <img src="images/servico/Rectangle6.png" alt="">
+                        </div>
+                    </article>
+                
+                    <dialog class="dServico" id="cuidados">
+                        <div class="topoServico">
+                            <div id="fecharCuidados" class="butao">X</div>
+                        </div>
+                    </dialog>
+                </section>
+
+
+            </section>
+            
+            
 
             <!-- Empresas -->
             <p class="texto">Empresas parceiras</p>

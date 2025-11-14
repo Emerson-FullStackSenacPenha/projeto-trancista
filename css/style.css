@@ -289,7 +289,6 @@ main{
 /* Dialogo de Serviços */
 .dServico{
 
-    position: fixed; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -300,7 +299,7 @@ main{
     
     height: 70vh;
     width: 70vw;
-
+    
 }
 
 .dServico::backdrop{
@@ -324,22 +323,10 @@ main{
 
 }
 
-.dServico button{
+.topoServico {
 
-    background-color: var(--cor_secundaria);
-    width: 200px;
-    border-color: var(--cor_secundaria);
-    border-radius: 20px;
-    color: white;
-    font-weight: 600;
-
-}
-
-.dServico button:hover{
-
-    color: var(--cor_secundaria);
-    background-color: white;
-    border-color: var(--cor_secundaria);
+    display: flex;
+    justify-content: end;
 
 }
 
