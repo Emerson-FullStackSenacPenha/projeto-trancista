@@ -64,37 +64,37 @@ main{
 #cabecalho{
 
     display: flex;
-    flex: 1;
-    justify-content: space-around;
+    width: 100%;
     max-width: 2000px;
-
+    gap: 10%;
+    
 }
 
 #logo{
 
-    height: 50px;
-    width: 100px;
-    margin: 0px 50px;
+    background-image: url(../images/Entrelaços\ 1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
     
-}
-
-#img_logo{
-
-    height: 55px;
+    height: 60px;
+    width: 150px;
+    margin-left: 20px;
 
 }
 
 #menu{
 
     display: flex;
+    gap: 20px;
     flex: 1;
-    justify-content: space-around;
-    
+
 }
 
 #menu_ul{
 
     display: flex;
+    flex: 1;
+    padding: 0;
     list-style: none;
     gap: 30px;
     font-weight: 600;
@@ -113,14 +113,17 @@ main{
     color: var(--cor_secundaria);
     margin-top: 5px;
     text-decoration: none;
-    
+    text-align: center;
+    width: 80px;
 }
 
 .pg_atual{
 
+    width: 80px;
     color: white;
     text-shadow: 0px 0px 3px var(--cor_secundaria);
-    
+    text-align: center;
+
     border-top: 5px solid var(--cor_secundaria);
 
 }
@@ -143,6 +146,7 @@ main{
     gap: 10px;
     font-size: 14px;
     color: var(--cor_secundaria);
+    margin-right: 10px;
 
 }
 
