@@ -1,8 +1,10 @@
 'use strict'
 
 const btTranca = document.querySelector("#btTranca");
+const btFtranca = document.querySelector("#btFtranca");
 const tranca = document.querySelector("#trancas");
 const btLace = document.querySelector("#btLace");
+const btFlace = document.querySelector("#btFlace");
 const lace = document.querySelector("#lace");
 const btApliqeu = document.querySelector("#btApliqeu");
 const aplique = document.querySelector("#aplique");
@@ -17,8 +19,16 @@ btTranca.addEventListener("click", function(){
     tranca.showModal();
 });
 
+btFtranca.addEventListener("click", function(){
+    tranca.close();
+});
+
 btLace.addEventListener("click", function(){
     lace.showModal();
+});
+
+btFlace.addEventListener("click", function(){
+    lace.close();
 });
 
 btAplique.addEventListener("click", function(){
