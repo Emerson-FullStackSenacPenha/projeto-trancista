@@ -110,9 +110,7 @@ fecharSe.addEventListener("click", function(){
     janelaSe.close();
 });
 
-// =======================================================
 // RECUPERAR SENHA
-// =======================================================
 botaoRecuperar.addEventListener("click", function(){
     janelaSe.close();
     consulSenha.value = "";
@@ -199,3 +197,22 @@ document.querySelector("#logout").addEventListener("click", function() {
     localStorage.removeItem("senha");
     location.reload(); // atualiza página para atualizar cabeçalho
 });
+
+// Verificar se está logado pra acessar 'usuario'
+function verificarLoginProtegido() {
+
+    // Esconde tudo para evitar flash da página
+    document.documentElement.style.display = "none";
+
+    const usuario = localStorage.getItem("usuario");
+    const senha = localStorage.getItem("senha");
+
+    if (!usuario || !senha) {
+        // Não logado → redireciona
+        alert("Você não está logado para acessar está página!");
+        window.location.href = "index.html";
+    } else {
+        // Logado → mostra conteúdo
+        document.documentElement.style.display = "block";
+    }
+}
