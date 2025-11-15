@@ -391,17 +391,24 @@ main{
 /* Sessão de Serviços */
 #sessao_servicos{
 
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    gap: 20px;
+    
+    
     
 }
 
 article {
 
     height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 
@@ -718,9 +725,33 @@ footer{
 
 }
 
+@media(max-width: 940px){
+
+    #sessao_servicos{
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+}
+
 @media(max-width: 820px){
 
-    
+    #topixo{
+
+        display: none;
+
+    }
+
+    #carouselExampleSlidesOnly{
+
+        margin: 0;
+
+    }
 
     #cabecalho_desktop{
 
@@ -767,11 +798,23 @@ footer{
         color: var(--cor_secundaria);
 
     }
+
     
 
 }
 
 @media(max-width: 630px){
+
+    main{
+
+        gap: 15px;
+
+    }
+
+    br{
+
+        display: none;
+    }
 
     #carouselExampleSlidesOnly{
 
@@ -788,8 +831,6 @@ footer{
     #sessao_servicos{
 
         grid-template-columns: 1fr;
-
-        background-color: aqua;
 
         place-items: center;
         gap: 10px;
@@ -813,6 +854,7 @@ footer{
 
     #contato{
 
+        margin: 15px 0;
         width: 100%;
         height: 100%;
 
