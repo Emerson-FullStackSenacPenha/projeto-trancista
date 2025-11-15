@@ -377,7 +377,7 @@ main{
 /* Banner */
 #carouselExampleSlidesOnly{
 
-    margin-top: 60px;
+    margin-top: 37px;
     display: flex;
     width: 100%;
     
@@ -621,6 +621,84 @@ article {
     background-size: cover;
     
 }
+
+/* Contato */
+
+#contato{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+#perfil{
+
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+#perfil img{
+
+    height: 120px;
+
+}
+
+.balao {
+
+    background: var(--cor_principal); /* cor clara igual à da imagem */
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    position: relative; /* para a setinha */
+    color: var(--cor_secundaria);
+}
+
+/* Setinha do balão */
+.balao::before {
+
+    content: "";
+    position: absolute;
+    left: -20px; /* posição da pontinha */
+    top: 50px;   /* distância do topo */
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 20px solid var(--cor_principal); /* mesma cor do fundo */
+
+}
+
+#redes{
+
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+
+#redes img{
+
+    height: 60px;
+
+}
+
+iframe{
+
+    margin: 10px 0px;
+    border: 5px solid var(--cor_secundaria);
+    width: 100%;
+
+}
+
+
+
 
 /* Empresas Parceiras */
 #empresas{
