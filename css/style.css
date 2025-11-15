@@ -348,7 +348,8 @@ main{
 
 .textoServico{
 
-    padding: 10px;
+    padding: 0px 50px;
+    font-size: 18px;
     color: var(--cor_secundaria);
     text-shadow: 2px 2px white;
     
