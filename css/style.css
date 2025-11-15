@@ -104,13 +104,6 @@ main{
 
 }
 
-.pg, a:hover{
-
-    color: white;
-    cursor: pointer;
-
-}
-
 .pg, a{
 
     color: var(--cor_secundaria);
@@ -120,7 +113,14 @@ main{
     width: 80px;
 }
 
-.pg_atual{
+.pg, a:hover{
+
+    color: white;
+    cursor: pointer;
+
+}
+
+.pg a.active{
 
     width: 80px;
     color: white;

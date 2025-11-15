@@ -891,5 +891,18 @@
     <script src="js/verificarLogin.js"></script>
     <script src="js/servicos.js"></script>
 
+    <script>
+
+        const links = document.querySelectorAll("#menu_ul .pg a");
+
+            links.forEach(link => {
+                link.addEventListener("click", () => {
+                    links.forEach(l => l.classList.remove("active"));
+                    link.classList.add("active");
+                });
+            });
+
+    </script>
+
 </body>
 </html>
