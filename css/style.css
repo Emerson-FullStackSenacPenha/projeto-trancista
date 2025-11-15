@@ -335,7 +335,6 @@ main{
     display: flex;
     justify-content: end;
     
-
 }
 
 .imgServico {
@@ -358,6 +357,27 @@ main{
 .textoServico h2{
 
     text-align: center;
+
+}
+
+.butaoserv{
+
+    color: white;
+    background-color: var(--cor_secundaria);
+    height: 30px;
+    width: 50px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 5px;
+
+}
+
+.butaoserv:hover{
+
+    background-color: white;
+    color: var(--cor_secundaria);
+    cursor: pointer;
 
 }
 
