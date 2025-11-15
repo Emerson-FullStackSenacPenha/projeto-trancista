@@ -635,6 +635,26 @@ article {
     
 }
 
+/* Galeria */
+#galeria{
+
+    margin-top: 20px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.postInsta {
+    
+    transform: scale(1); /* diminui o tamanho */
+    transform-origin: center; /* evita distorção */
+    padding: 0;
+    margin: 0;
+}
+
 /* Contato */
 #contato{
 
