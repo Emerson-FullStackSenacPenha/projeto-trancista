@@ -929,7 +929,7 @@ footer{
 
     #perfil{
 
-        display: none;
+        padding: 10px;
 
     }
 
@@ -948,15 +948,10 @@ footer{
 
     }
 
-    iframe{
-
-        display: none;
-
-    }
-
     #endereço{
 
-        display: none;
+        font-size: 13px;
+        font-weight: 600;
 
     }
 
