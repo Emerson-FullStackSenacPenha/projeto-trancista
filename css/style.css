@@ -311,6 +311,7 @@ main{
 .conteudoDialog{
 
     display: flex;
+    height: 100%;
 
 }
 
@@ -337,11 +338,10 @@ main{
 
 }
 
-
 .imgServico {
     
     width: 50%;       /* ocupa toda a largura do container */
-    height: 100%;      /* ocupa toda a altura do container */
+         /* ocupa toda a altura do container */
     object-fit: cover; /* preenche o espaço mantendo a proporção, cortando o excesso se necessário */
     display: block; 
 
