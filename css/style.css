@@ -855,6 +855,12 @@ footer{
 
     }
 
+    .offcanvas-backdrop{
+
+        height: 100%;
+
+    }
+
 }
 
 @media(max-width: 630px){
@@ -893,6 +899,14 @@ footer{
 
         width: 90%;
         height: 80%;
+
+    }
+
+    .dServico::backdrop{
+
+        background: rgba(0, 0, 0, 0.4); /* fallback */
+        -webkit-backdrop-filter: blur(2px); /* Safari iOS */
+        backdrop-filter: blur(2px);
 
     }
 
