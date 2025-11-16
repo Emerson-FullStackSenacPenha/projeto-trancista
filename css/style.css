@@ -810,6 +810,20 @@ footer{
         
     }
 
+    #menu_ul{
+
+        flex-direction: column;
+    
+    }
+
+    #menu_ul a{
+
+        text-decoration: none;
+        color: var(--cor_secundaria);
+        font-size: 16px;
+        
+    }
+
     #menu_loginMobile{
 
         margin-top: 45%;
@@ -949,11 +963,6 @@ footer{
 }
 
 @media(max-width: 630px){
-
-    br{
-
-        display: none;
-    }
 
     #carouselExampleSlidesOnly{
 
