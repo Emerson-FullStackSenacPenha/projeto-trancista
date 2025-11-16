@@ -627,7 +627,7 @@ article {
     justify-content: space-around;
     align-items: center;
 
-    background-color: aqua;
+    
 
 }
 
@@ -952,8 +952,8 @@ footer{
 
     #redes{
 
-        margin: 10px;
-        gap: 40px;
+        margin-top: 10px;
+        gap: 15px;
 
     }
 
