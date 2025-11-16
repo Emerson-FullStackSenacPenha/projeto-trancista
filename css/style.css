@@ -805,6 +805,7 @@ footer{
 
     #menu_loginMobile{
 
+        margin-top: 45%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -813,20 +814,13 @@ footer{
         font-size: 14px;
         color: var(--cor_secundaria);
         
-
     }
 
-    .caixa{
+    #fecharLogar{
 
-        background-color: aliceblue;
-        border-radius: 5px;
-        border: 0;
+        position: absolute;
+        right: 0px;
 
-        height: 15px;
-        width: 50px;
-        
-        font-size: 10px;
-        
     }
 
     #usuario{
@@ -838,15 +832,6 @@ footer{
         font-size: 30px;
     }
 
-    #senhaMobile {
-
-        position: relative;
-        display: block;
-        width: 100%;
-
-    }
-
-
     #senha {
 
         background-color: aliceblue;
@@ -855,21 +840,20 @@ footer{
         
         height: 40px;
         width: 80%;
-        font-size: 30px;
         text-align: center;
+        font-size: 30px;
         
-        
-        margin-left: 5vh;    
-
     }
 
 
     #mostrar {
         
         position: absolute;
-        top: 50%;
-        right: 40px;
-        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 80px;
+        transform: translateY(-60%);
         
         background: transparent;
         color: var(--cor_secundaria);
@@ -880,6 +864,7 @@ footer{
         height: 40px;
         padding: 0;
         z-index: 10;
+
     }
 
     .butao{
@@ -915,9 +900,15 @@ footer{
 
     .btn{
 
-        background-color: var(--cor_secundaria);
+        position: fixed;
+        right: 0px;
+        z-index: 1045;
+
+        background-color: rgba(151, 0, 0, 0.5);
         border: none;
-        width: 60px;
+        height: 55px;
+        width: 55px;
+        margin: 2px;
 
     }
 
