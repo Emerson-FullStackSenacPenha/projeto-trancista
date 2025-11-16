@@ -939,7 +939,27 @@ footer{
     #perfil{
 
         padding: 10px;
+        gap: 25px;
 
+    }
+
+    #perfil img{
+
+        height: 60px;
+
+    }
+
+    .balao p{
+
+        font-size: 12px;
+        font-weight: 600;
+
+    }
+
+    .balao::before {
+
+        top: 20px;   /* distância do topo */
+        
     }
 
     #contato{
