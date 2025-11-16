@@ -1011,9 +1011,14 @@ footer{
     .textoServico{
 
         font-size: 12px;
-        font-weight: 400;
         padding: 10px;
-        font-weight: 600;
+    
+    }
+
+    .textoServico h2{
+
+        text-align: center;
+        font-size: 16px;
 
     }
 
