@@ -180,8 +180,6 @@ main{
     border: 0;
 
     height: 15px;
-    width: 50px;
-    
     font-size: 10px;
     
 }
@@ -803,6 +801,100 @@ footer{
         display: flex;
         justify-content: space-between;
         
+    }
+
+    #menu_loginMobile{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 14px;
+        color: var(--cor_secundaria);
+        
+
+    }
+
+    .caixa{
+
+        background-color: aliceblue;
+        border-radius: 5px;
+        border: 0;
+
+        height: 15px;
+        width: 50px;
+        
+        font-size: 10px;
+        
+    }
+
+    #usuario{
+
+        height: 40px;
+        width: 80%;
+        
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #senhaMobile {
+
+        position: relative;
+        display: block;
+        width: 100%;
+
+    }
+
+
+    #senha {
+
+        background-color: aliceblue;
+        border-radius: 5px;
+        border: 0;
+        
+        height: 40px;
+        width: 80%;
+        font-size: 30px;
+        text-align: center;
+        
+        
+        margin-left: 5vh;    
+
+    }
+
+
+    #mostrar {
+        
+        position: absolute;
+        top: 50%;
+        right: 40px;
+        transform: translateY(-50%);
+        
+        background: transparent;
+        color: var(--cor_secundaria);
+        border: none;
+        cursor: pointer;
+        
+        font-size: 20px;
+        height: 40px;
+        padding: 0;
+        z-index: 10;
+    }
+
+    .butao{
+
+        color: white;
+        background-color: var(--cor_secundaria);
+        height: 40px;
+        width: 50%;
+        text-align: center;
+        font-size: 20px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
     }
 
     .offcanvas h5{
