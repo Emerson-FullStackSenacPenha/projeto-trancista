@@ -875,7 +875,6 @@ footer{
         
     }
 
-
     #mostrar {
         
         position: absolute;
@@ -914,7 +913,7 @@ footer{
 
     .menu-mobile{
 
-        width: 50vw !important ; 
+        width: 70vw !important ; 
 
     }
 
@@ -952,7 +951,7 @@ footer{
         color: white;
 
         height: 50px;
-        width: 100px;
+        width: 50vw;
         border-radius: 10px;
 
         display: flex;
