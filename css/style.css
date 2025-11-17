@@ -1030,6 +1030,9 @@ footer{
     .offcanvas-backdrop{
 
         height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* transparente o suficiente para o blur aparecer */
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
 
     }
 
