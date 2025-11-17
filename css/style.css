@@ -664,6 +664,12 @@ article {
 
 }
 
+#perfil a{
+
+    text-decoration: none;
+
+}
+
 #perfil img{
 
     height: 120px;
