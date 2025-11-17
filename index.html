@@ -149,14 +149,13 @@
 
                 <div class="offcanvas-body">
 
-                    <ul id="menu_ul">
+                    <ul id="menu_ulMobile">
                         <li ><a href="#cabecalho_mobile">INICIO</a></li>
                         <li ><a href="#serv">SERVIÇOS</a></li>
                         <li ><a href="#galery">GALERIA</a></li>
                         <li ><a href="#maps">CONTATO</a></li>
                         <li ><a href="#endereco">ENDEREÇO</a></li>
                     </ul>
-
 
                 </div>
 
@@ -935,14 +934,32 @@
     <script src="js/verificarLoginMobile.js"></script>
     <script src="js/servicos.js"></script>
 
+    <!-- Desktop -->
     <script>
-
         const links = document.querySelectorAll("#menu_ul .pg a");
 
             links.forEach(link => {
                 link.addEventListener("click", () => {
                     links.forEach(l => l.classList.remove("active"));
                     link.classList.add("active");
+                });
+            });
+    </script>
+
+    <!-- Mobile -->
+    <script>
+
+        // Pega todos os links do menu mobile
+            const linksMobile = document.querySelectorAll('#menu_ulMobile a');
+
+            // Pega a referência do offcanvas
+            const offcanvasElement = document.getElementById('offcanvasRight'); // <-- ID do seu offcanvas
+            const offcanvasInstance = bootstrap.Offcanvas.getOrCreateInstance(offcanvasElement);
+
+            // Adiciona evento de clique nos links
+            linksMobile.forEach(link => {
+                link.addEventListener('click', () => {
+                    offcanvasInstance.hide();   // Fecha o menu
                 });
             });
 

@@ -810,14 +810,21 @@ footer{
         
     }
 
-    #menu_ul{
+    #menu_ulMobile{
 
+        display: flex;
         flex-direction: column;
-        margin: 0;
+        
         gap: 30px;
     }
 
-    #menu_ul a{
+    ol, ul{
+
+        padding: 0;
+
+    }
+
+    #menu_ulMobile a{
 
         text-decoration: none;
         color: var(--cor_secundaria);
@@ -913,7 +920,7 @@ footer{
 
     .offcanvas-header{
 
-        padding: 8px;
+        padding: 20px;
         display: flex;
         flex-direction: column;
         
@@ -964,9 +971,18 @@ footer{
         text-align: start;
         margin: 0;
         padding: 0;
+        
 
         box-shadow: 1px 1px 1px 1px var(--cor_secundaria);
         
+    }
+
+    .offcanvas-header .btn-close{
+
+        border: solid 1px black;
+        margin-bottom: 10px;
+        
+
     }
 
     #logo{
