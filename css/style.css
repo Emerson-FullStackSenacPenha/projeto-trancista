@@ -813,7 +813,8 @@ footer{
     #menu_ul{
 
         flex-direction: column;
-    
+        margin: 0;
+        gap: 0px;
     }
 
     #menu_ul a{
@@ -903,14 +904,68 @@ footer{
 
     }
 
-    .offcanvas h5{
+    .menu-mobile{
 
-        width: 100%;
+        width: 50vw !important ; 
+
+    }
+
+    .offcanvas-header{
+
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .offcanvas-header ul{
+
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+    }
+
+    .offcanvas-title{
+
+        padding: 0;
+        margin-top: 0px;
+        order: 1;
+        
+    }
+
+    .offcanvas-title li{
+
+        background-color: var(--cor_secundaria);
+        list-style: none;
+        color: white;
+
+        height: 50px;
+        width: 100px;
+        border-radius: 10px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .offcanvas-body li{
+
+        
         text-align: center;
         font-weight: 600;
         color: var(--cor_secundaria);
-        font-size: 2rem;
-
+        font-size: 1.5rem;
+        list-style: none;
+        text-align: start;
+        margin: 0;
+        padding: 0;
+        
+        
     }
 
     #logo{
